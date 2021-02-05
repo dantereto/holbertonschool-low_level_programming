@@ -9,17 +9,26 @@ int main(void)
   int num2 = 0;
   while (num < 100)
     {
-      putchar((num / 10) + '0');
-      putchar((num % 10) + '0');
-      while (num < 100)
+      (num  = num / 10);
+      (num = num % 10);
+      while (num2 < 100)
 	{
-      if (num <  99)
+	  (num2 = num2 / 10);
+	  (num2 = num2 % 10);
+	  if (num <  num2 || (num == num2))
 	{
-	  putchar(',');
-	  putchar(' ');
+	  putchar(num + '0');
+	  putchar(' ' + '0');
+	  putchar(num2 + '0');
+	  if (num != 9 && num2 != 8)
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
+	}
+      num2++;
 	}
       num++;
-	}
     }
   putchar('\n');
   return (0);
