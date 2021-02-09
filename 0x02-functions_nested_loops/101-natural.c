@@ -8,7 +8,7 @@ int main(void)
 {
 int n = 0;
 int sum;
-while (n < 1024)
+while (n <= 1024)
 {
 if (n % 3 == 0)
 sum += n;
