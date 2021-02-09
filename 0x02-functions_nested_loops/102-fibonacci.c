@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int f1 = 1, f2 = 1, i;
+int f1 = 1, f2 = 2, i;
 int next;
 printf("%d,", f1);
 for (i = 1; i < 50; i++)
