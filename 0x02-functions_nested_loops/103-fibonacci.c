@@ -16,7 +16,6 @@ if (two % 2 == 0)
 sum += two;
 i = two;
 two += n;
-two++;
 n = i;
 }
 printf("%d\n", sum);
