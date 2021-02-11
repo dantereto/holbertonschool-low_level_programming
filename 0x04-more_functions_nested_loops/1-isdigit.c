@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _isupper -  checks for uppercase character
+ * _isdigit -  checks for numbers
  *@c: the number
  *Return: return 0
  */
