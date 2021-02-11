@@ -18,6 +18,6 @@ _putchar('\\');
 _putchar('\n');
 line++;
 }
- if (line < 1)
-   _putchar('\n');
+if (line < 1)
+_putchar('\n');
 }
