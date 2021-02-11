@@ -7,8 +7,6 @@
 void print_diagonal(int n)
 {
 int line, space;
-if (n < 0)
-_putchar('\n');
 line = 0;
 for (; n > 0; n--)
 {
@@ -20,4 +18,6 @@ _putchar('\\');
 _putchar('\n');
 line++;
 }
+ if (line < 1)
+   _putchar('\n');
 }
