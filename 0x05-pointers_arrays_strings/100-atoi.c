@@ -1,20 +1,20 @@
 #include "holberton.h"
 /**
- * puts2 - print a string of numbers
- *@str: the string
+ * _atoi - make an atoi function
+ *@s: the string
  *Return: return 0
  */
 int _atoi(char *s)
 {
-  int res = 0;
-  int sign = 1;
-  int i = 0;
-  if (s[0] == '-') 
+int res = 0;
+int sign = -1;
+int i = 0;
+for (; s[i] != '\0' && (s[i] < '0' || s[i] > '9'); i++)
 {
-    sign = -1;
-    i++;
+if (s[0] == '-')
+sign *= -1;
 }
-  for (; s[i] != '\0'; ++i)
-    res = res * 10 + s[i] - '0';
-  return (sign * res);
+for (; s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'); i++)
+res = (res * 10) - (s[i] - '0');
+return (sign *res);
 }
