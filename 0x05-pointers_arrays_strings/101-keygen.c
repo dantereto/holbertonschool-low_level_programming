@@ -9,8 +9,8 @@ int main(void)
 {
 int cont;
 int ran;
-int check;
- for (cont = 0; cont < check = 2772; check > 122; cont++)
+int check = 2772;
+for (cont = 0; check > 122; cont++)
 {
 ran = (rand() % 100);
 printf("%c", ran);
