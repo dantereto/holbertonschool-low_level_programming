@@ -10,11 +10,11 @@ int main(void)
 int cont;
 int ran;
 int check = 2772;
+srand(time(NULL));
 for (cont = 0; check > 122; cont++)
 {
 ran = (rand() % 100);
 printf("%c", ran);
-srand(time(NULL));
 check -=  ran;
 }
 printf("%c", check);
