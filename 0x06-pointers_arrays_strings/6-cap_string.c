@@ -15,7 +15,8 @@ char *cap_string(char *string)
 	  string[i] -= 32;
       else if (string[i - 1] == ',' || string[i - 1] == ';' || string[i - 1] == '.' ||
 	       string[i - 1] == 33 || string[i - 1] == '"' || string[i - 1] == ')' || string[i - 1] == '(' 
-	       || string[i - 1] == '{' || string[i - 1] == '}'|| string[i - 1] == '?')
+	       || string[i - 1] == '{' || string[i - 1] == '}'|| string[i - 1] == '?' || string[i - 1] == '\n' 
+	       || string[i - 1] == 32 || string[i - 1] == '\t')
 	string[i] -= 32;
 	}
       i++;
