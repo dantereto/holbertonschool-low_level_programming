@@ -20,7 +20,7 @@ cont++;
 break;
 }
 else if (accept[i + 1] == '\0')
-  return (cont);
+return (cont);
 i++;
 }
 s++;
