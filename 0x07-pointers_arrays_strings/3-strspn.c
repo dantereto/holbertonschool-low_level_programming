@@ -22,7 +22,7 @@ break;
 i++;
 }
 if (accept[cont - 1] == '\0')
-break;
+return (cont);
 s++;
 }
 return (cont);
