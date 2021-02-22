@@ -19,10 +19,10 @@ if (*s == accept[i])
 cont++;
 break;
 }
+else if (accept[i + 1] == '\0')
+  return (cont);
 i++;
 }
-if (accept[cont - 1] == '\0')
-return (cont);
 s++;
 }
 return (cont);
