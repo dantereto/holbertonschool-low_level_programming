@@ -11,8 +11,6 @@ while (*s != '\0')
 {
 if (*s == c)
 return (s);
-else if (!*s)
-return ('\0');
 s++;
 }
 return ('\0');
