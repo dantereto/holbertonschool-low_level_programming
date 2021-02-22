@@ -15,5 +15,5 @@ else if (!*s)
 return ('\0');
 s++;
 }
-return (s);
+return ('\0');
 }
