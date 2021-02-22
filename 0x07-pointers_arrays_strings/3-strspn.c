@@ -21,7 +21,9 @@ break;
 }
 i++;
 }
+if (accept[cont - 1] == '\0')
+break;
 s++;
 }
-return (cont - 2);
+return (cont);
 }
