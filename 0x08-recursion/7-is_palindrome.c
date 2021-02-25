@@ -24,7 +24,7 @@ int search(char *s, int len)
 {
 if (*s == 0)
 return (1);
-else if (*s != *(s + len - 1))
+else if (*s != s[len])
 return (0);
 else
 return (search(s + 1, len - 2));
@@ -39,5 +39,5 @@ int is_palindrome(char *s)
 int len = _strlen_recursion(s);
 if (len <= 1)
 return (1);
-return (search(s, len));
+return (search(s, len - 1));
 }
