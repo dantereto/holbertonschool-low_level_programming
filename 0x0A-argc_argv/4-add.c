@@ -22,7 +22,7 @@ sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
 }
-if (argc < 3)
+else
 {
 printf("0\n");
 return (1);
