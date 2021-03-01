@@ -9,10 +9,15 @@
 int main(int argc, char *argv[])
 {
 int money, coins = 0;
+if (argc != 2)
+{
+printf("Error\n");
+return (1);
+}
+else if (argc == 2)
+{
 money = atoi(argv[1]);
 while (money > 0)
-{
-if (argc == 2)
 {
 if (money >= 25)
 {
@@ -38,11 +43,6 @@ else if ((money - 1) >= 0)
 {
 money -= 2;
 coins++;
-}
-else
-{
-printf("Error\n");
-return (1);
 }
 }
 }
