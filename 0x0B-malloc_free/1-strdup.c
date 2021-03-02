@@ -13,7 +13,7 @@ if (str == NULL)
 return ('\0');
 for (cont = 0; str[cont] != '\0'; cont++)
 ;
-p = malloc(sizeof(char) * cont);
+p = malloc(sizeof(char) * cont + 1);
 if (p == 0)
 return ('\0');
 for (i = 0; i < cont; i++)
