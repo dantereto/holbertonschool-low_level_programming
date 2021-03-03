@@ -3,15 +3,13 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * str_concat - concatet two strings
- *@s1: the string
- *@s2: second sring
+ * strtow - concatet two strings
+ *@str: the string
  *Return: reyturn 0
  */
 char **strtow(char *str)
 {
-  if (str == NULL || str == 0)
-    return ('\0');
-
-  return 0;
+if (str == NULL || str == 0)
+return ('\0');
+return (0);
 }
