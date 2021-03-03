@@ -22,6 +22,7 @@ if (alloc[i] == '\0')
 {
 while (i >= 0)
 {
+i--;
 free(alloc[i]);
 }
 free(alloc);
