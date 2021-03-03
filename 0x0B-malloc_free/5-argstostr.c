@@ -21,13 +21,13 @@ cont++;
 p = malloc(sizeof(char) * cont);
 if (p == '\0')
 return ('\0');
+i = 0;
+j = 0;
+copy = 0;
 for (i = 0; i < ac; i++)
 {
-for (j = 0; av[i][j]; j++)
-{
+  for (j = 0; av[i][j]; j++, copy++)
 p[copy] = av[i][j];
-copy++;
-}
 p[copy] = '\n';
 copy++;
 }
