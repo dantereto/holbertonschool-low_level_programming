@@ -17,7 +17,7 @@ if (alloc == '\0')
 return ('\0');
 for (i = 0; i < height; i++)
 {
-alloc[i] = malloc(sizeof(int) * width);
+alloc[i] = malloc(sizeof(int *) * width);
 if (alloc[i] == '\0')
 {
 while (i >= 0)
@@ -29,7 +29,7 @@ free(alloc);
 return (NULL);
 }
 for (j = 0; j < width; j++)
-alloc[i][j] = 0;
+alloc[i][j] = '\0';
 }
 return (alloc);
 }
