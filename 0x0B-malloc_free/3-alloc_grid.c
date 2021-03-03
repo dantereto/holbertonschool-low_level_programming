@@ -12,12 +12,12 @@ int i, j;
 int **alloc;
 if (width <= 0 || height <= 0)
 return ('\0');
-alloc = malloc(sizeof(int) * height);
+alloc = malloc(sizeof(int *) * height);
 if (alloc == '\0')
 return ('\0');
 for (i = 0; i < height; i++)
 {
-alloc[i] = malloc(sizeof(int *) * width);
+alloc[i] = malloc(sizeof(int) * width);
 if (alloc[i] == '\0')
 {
 while (i >= 0)
