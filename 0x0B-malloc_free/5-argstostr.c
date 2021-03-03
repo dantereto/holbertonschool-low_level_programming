@@ -23,8 +23,11 @@ if (p == '\0')
 return ('\0');
 for (i = 0; i < ac; i++)
 {
-for (j = 0; av[i][j]; j++, copy++)
+for (j = 0; av[i][j]; j++)
+{
 p[copy] = av[i][j];
+copy++;
+}
 p[copy] = '\n';
 copy++;
 }
