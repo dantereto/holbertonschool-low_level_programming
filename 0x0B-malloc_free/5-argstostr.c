@@ -9,14 +9,13 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i = 0, j = 0, cont = 0, copy = 0;
+int i = 0, j = 0, cont = 1, copy = 0;
 char *p;
 if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j]; j++)
-cont++;
 cont++;
 }
 p = malloc(sizeof(char) * cont);
