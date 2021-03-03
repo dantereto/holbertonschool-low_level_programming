@@ -20,11 +20,8 @@ for (i = 0; i < height; i++)
 alloc[i] = malloc(sizeof(int) * width);
 if (alloc[i] == '\0')
 {
-while (i >= 0)
-{
-i--;
+for (; i >= 0; i++)
 free(alloc[i]);
-}
 free(alloc);
 return (NULL);
 }
