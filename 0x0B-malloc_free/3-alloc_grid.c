@@ -29,7 +29,7 @@ free(alloc);
 return (NULL);
 }
 for (j = 0; j < width; j++)
-alloc[i][j] = '\0';
+alloc[i][j] = 0;
 }
 return (alloc);
 }
