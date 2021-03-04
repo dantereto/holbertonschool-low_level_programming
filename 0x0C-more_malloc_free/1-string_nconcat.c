@@ -19,8 +19,6 @@ if (s2 == '\0')
 s2 = ("");
 for (i = 0; s1[i] != '\0'; i++)
 cont++;
-if (n >= i)
-n = i;
 array = malloc(sizeof(char) * cont + 1);
 if (array == '\0')
 return ('\0');
