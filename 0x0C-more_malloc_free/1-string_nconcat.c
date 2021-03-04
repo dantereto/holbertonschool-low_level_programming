@@ -28,10 +28,13 @@ copy = cont + n;
 array = malloc(sizeof(char) * copy + 1);
 if (array == '\0')
 return ('\0');
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; i < copy; i++)
+{
+if (i < cont)
 array[i] = s1[i];
-for (j = 0; s2[j] != '\0' && i < (copy + 1); j++, i++)
-array[i] = s2[j];
+else
+array[i] = s2[i - cont];
+}
 array[i] = '\0';
 return (array);
 }
