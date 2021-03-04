@@ -10,8 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, copy, cont;
-unsigned int j;
+unsigned int i = 0, copy = 0, cont = 0;
+unsigned int j = 0;
 char *array;
 if (s1 == '\0')
 s1 = ("");
