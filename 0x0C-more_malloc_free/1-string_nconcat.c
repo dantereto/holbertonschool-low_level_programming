@@ -26,5 +26,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     array[copy] = s1[i];
   for (j = 0; s2[j] != '\0' && j < n; j++, copy++)
     array[copy] = s2[j];
+  array[copy] = '\0';
   return (array);
 }
