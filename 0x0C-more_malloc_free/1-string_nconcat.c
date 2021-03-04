@@ -21,9 +21,10 @@ for (i = 0; s1[i] != '\0'; i++)
 cont++;
 for (j = 0; s2[j] != '\0'; j++)
 cont2++;
-if (n < cont2)
-cont2 = n;
+if (n >= cont2)
 copy += cont + cont2;
+else
+copy = cont + n;
 array = malloc(sizeof(char) * copy + 1);
 if (array == '\0')
 return ('\0');
