@@ -12,9 +12,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
   unsigned int i, j, cont;
   char *array;
+  if (s1 == '\0')
+    s1 = "";
+  if (s2 == '\0')
+    s2 = "";
   for (i = 0; s1[i] != '\0'; i++)
     cont++;
-    array = malloc(sizeof(char) *cont + i + 1);
+    array = malloc(sizeof(char) * cont + n + 1);
   if (array == '\0')
     return ('\0');
   for (i = 0; s1[i] != '\0'; i++)
