@@ -16,7 +16,7 @@ return ('\0');
 array = malloc(nmemb * size);
 if (array == '\0')
 return ('\0');
-for (i = 0; i < size; i++)
+for (i = 0; i < nmemb * size; i++)
 array[i] = '\0';
 return (array);
 }
