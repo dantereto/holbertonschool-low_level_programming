@@ -13,9 +13,9 @@ int *array;
 int i, cont = min;
 if (min > max)
 return ('\0');
-for (cont = 0; cont <= max; cont++)
+for (cont = 0; min <= max; cont++)
 ;
-array = malloc(sizeof(int) * cont + 1);
+array = malloc(sizeof(int) * cont);
 if (array == '\0')
 return ('\0');
 for (i = 0; min <= max; i++, min++)
