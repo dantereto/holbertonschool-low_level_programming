@@ -23,7 +23,7 @@ for (j = 0; s2[j] != '\0'; j++)
 cont++;
 if (n >= j)
 n = j;
-array = malloc(sizeof(char) * (i + n + 1));
+array = malloc(sizeof(char) * cont + 1);
 if (array == '\0')
 return ('\0');
 for (i = 0; s1[i] != '\0'; i++, copy++)
