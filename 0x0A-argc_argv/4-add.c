@@ -15,7 +15,7 @@ for (i = 1 ; i < argc; i++)
 {
 if (atoi(argv[i]) == 0)
 {
-printf("Error\n");
+printf("%s\n", "Error");
 return (1);
 }
 sum += atoi(argv[i]);
