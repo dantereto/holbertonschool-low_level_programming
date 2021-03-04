@@ -10,8 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  int i = 0, copy = 0, cont = 0;
-  int j;
+  unsigned int i = 0, copy = 0, cont = 0;
+  unsigned int j;
   char *array;
   if (s1 == '\0')
     s1 = ("");
@@ -21,8 +21,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
     cont++;
   for (j = 0; s2[j] != '\0'; j++)
     cont++;
-  if ((int)n < cont)
-    j = (int)n;
+  if (n < j)
+    j = n;
   copy += i + j;
   array = malloc(sizeof(char) * copy + 1);
   if (array == '\0')
