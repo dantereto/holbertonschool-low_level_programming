@@ -13,8 +13,8 @@ int *array;
 int i, cont = min;
 if (min > max)
 return ('\0');
-cont = max - min;
-array = malloc(sizeof(int) * cont + 1);
+cont = max - min + 1;
+array = malloc(sizeof(int) * cont);
 if (array == '\0')
 return ('\0');
 for (i = 0; i < cont && min <= max; i++, min++)
