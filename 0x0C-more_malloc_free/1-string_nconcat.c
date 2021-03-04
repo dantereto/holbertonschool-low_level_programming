@@ -19,10 +19,8 @@ if (s2 == '\0')
 s2 = ("");
 for (i = 0; s1[i] != '\0'; i++)
 cont++;
-for (j = 0; s2[j] != '\0'; j++)
-cont++;
-if (n >= j)
-n = j;
+if (n >= i)
+n = i;
 array = malloc(sizeof(char) * cont + 1);
 if (array == '\0')
 return ('\0');
@@ -30,7 +28,6 @@ for (i = 0; s1[i] != '\0'; i++, copy++)
 array[copy] = s1[i];
 for (j = 0; s2[j] != '\0' && j < n; j++, copy++)
 array[copy] = s2[j];
- array[copy] = '\0';
 return (array);
 }
 
