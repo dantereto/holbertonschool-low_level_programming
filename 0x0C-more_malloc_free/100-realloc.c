@@ -28,12 +28,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
     }
   array = malloc(sizeof(char) * new_size);
   if (array == '\0')
-    {
     return ('\0');
-    free(ptr);
-    }
   ptr2 = ptr;
-  for (i = 0; i < new_size; i++)
+  for (i = 0; i < new_size; i++, ptr2++)
     array[i] = *ptr2;
   free(ptr);
   return (array);
