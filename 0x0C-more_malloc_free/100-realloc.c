@@ -10,28 +10,28 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-char *array;
-char *ptr2;
-unsigned int i;
-if (new_size == old_size)
-return (ptr);
-if (new_size == 0 && ptr != '\0')
-{
-free(ptr);
-return ('\0');
-}
-if (ptr == NULL)
-{
-array = malloc(new_size);
-if (array == '\0')
-return ('\0');
-}
-array = malloc(sizeof(char) * new_size);
-if (array == '\0')
-return ('\0');
-ptr2 = ptr;
-for (i = 0; i < new_size; i++)
-array[i] = *ptr2;
-free(ptr);
-return (array);
-}
+  char *array;
+  char *ptr2;
+  unsigned int i;
+  if (new_size == old_size)
+    return (ptr);
+  if (new_size == 0 && ptr != '\0')
+    {
+      free(ptr);
+      return ('\0');
+    }
+  if (ptr == NULL)
+    {
+      array = malloc(new_size);
+      if (array == '\0')
+	return ('\0');
+    }
+  array = malloc(sizeof(char) * new_size);
+  if (array == '\0')
+    return ('\0');
+  ptr2 = ptr;
+  for (i = 0; i < new_size; i++)
+    array[i] = *ptr2;
+  free(ptr);
+  return (array);
+ }
