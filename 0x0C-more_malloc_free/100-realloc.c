@@ -26,7 +26,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
       if (array == '\0')
 	return ('\0');
     }
-  array = malloc(sizeof(char) * new_size);
+  array = malloc(new_size);
   if (array == '\0')
     return ('\0');
   ptr2 = ptr;
