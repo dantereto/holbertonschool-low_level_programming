@@ -30,8 +30,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
   if (array == '\0')
     return ('\0');
   ptr2 = ptr;
-  for (i = 0; i < new_size; i++, ptr2++)
-    array[i] = *ptr2;
+  for (i = 0;i < old_size && i < new_size; i++)
+    array[i] = ptr2[i];
   free(ptr);
   return (array);
  }
