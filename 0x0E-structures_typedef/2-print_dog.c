@@ -8,6 +8,8 @@
  */
 void print_dog(struct dog *d)
 {
+if (d != '\0')
+{
 if (d->name == '\0')
 printf("Name: (nil)");
 else
@@ -20,4 +22,5 @@ if (d->owner == '\0')
 printf("Owner: (nil)");
 else
 printf("Owner: %s\n", d->owner);
+}
 }
