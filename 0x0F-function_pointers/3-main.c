@@ -24,8 +24,9 @@ result = (*get_op_func(argv[2]))(num1, num2);
 if (result == '\0' || argv[2][1] != '\0')
 {
 printf("Error\n");
-exit(100);
+exit(99);
 }
+else
 printf("%d\n", result);
 return (0);
 }
