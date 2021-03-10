@@ -9,8 +9,6 @@ int main(int argc, char *argv[])
 {
 int num1 = atoi(argv[1]), num2 = atoi(argv[3]);
 int result;
-if (argc == 0)
-printf("holi");
 if (argc != 4)
 {
 printf("Error\n");
