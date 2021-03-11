@@ -28,6 +28,6 @@ while (i < number - 1)
 printf("%02hhx ", cont[i]);
 i++;
 }
-printf("%02hhx\n");
+printf("%02hhx\n", cont[i]);
 return (0);
 }
