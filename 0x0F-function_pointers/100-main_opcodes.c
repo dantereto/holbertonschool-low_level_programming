@@ -23,11 +23,11 @@ exit(2);
 }
 cont  = (char *)main;
 number = atoi(argv[1]);
-while (i < number)
+while (i < number - 1)
 {
 printf("%02hhx ", cont[i]);
 i++;
 }
-printf("\n");
+printf("02hhx\n");
 return (0);
 }
