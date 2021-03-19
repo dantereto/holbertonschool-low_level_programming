@@ -7,7 +7,7 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t cont = 0;
+size_t cont;
 while (h != '\0')
 {
 if (h->str == '\0')
