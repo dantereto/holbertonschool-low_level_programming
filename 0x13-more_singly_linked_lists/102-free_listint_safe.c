@@ -23,7 +23,7 @@ cont++;
 free(position);
 if (position <= next_p)
 {
-free(next_p);
+free(position);
 break;
 }
 }
