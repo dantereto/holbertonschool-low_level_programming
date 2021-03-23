@@ -21,7 +21,7 @@ return (new);
 }
 new->n = n;
 cont = *head;
-for (number = 0; number < idx - 1; number++)
+for (number = 0; number < (idx - 1); number++)
 {
 if (cont == '\0')
 return ('\0');
