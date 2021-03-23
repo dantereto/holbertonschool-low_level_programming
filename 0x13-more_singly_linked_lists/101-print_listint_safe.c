@@ -11,11 +11,9 @@ size_t print_listint_safe(const listint_t *head)
 {
 const listint_t *position, *next_p = head;
 size_t cont = 0;
-if (next_p == 0)
-return (0);
 if (head == '\0')
 return ('\0');
-while (next_p != '\0')
+while (next_p != 0)
 {
 position = next_p;
 next_p = next_p->next;
