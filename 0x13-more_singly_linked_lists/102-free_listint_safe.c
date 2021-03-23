@@ -20,7 +20,7 @@ while (next_p != 0)
 position = next_p;
 next_p = next_p->next;
 cont++;
-free(next_p);
+free(position);
 if (position <= next_p)
 {
 break;
