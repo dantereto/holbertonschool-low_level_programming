@@ -13,11 +13,17 @@ unsigned int number;
 new = malloc(sizeof(listint_t));
 if (new == '\0')
 return ('\0');
+if (idx == 0)
+{
+new->next = *head;
+*head = new;
+return (new);
+}
 new->n = n;
 cont = *head;
 for (number = 0; number < idx - 1; number++)
 {
-if (cont == '\0' || cont->next == '\0')
+if (cont == '\0')
 return ('\0');
 cont = cont->next;
 }
