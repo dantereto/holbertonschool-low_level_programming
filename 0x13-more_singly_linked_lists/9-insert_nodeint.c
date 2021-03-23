@@ -17,7 +17,7 @@ new->n = n;
 cont = *head;
 for (number = 0; number < idx - 1; number++)
 {
-if (cont == '\0')
+if (cont == '\0' || cont->next == '\0')
 return ('\0');
 cont = cont->next;
 }
