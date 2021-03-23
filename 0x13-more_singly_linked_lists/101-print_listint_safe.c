@@ -13,7 +13,7 @@ const listint_t *position, *next_p = head;
 size_t cont = 0;
 if (head == '\0')
 return ('\0');
-while (next_p != 0)
+while (head != '\0')
 {
 position = next_p;
 next_p = next_p->next;
