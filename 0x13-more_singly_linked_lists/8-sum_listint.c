@@ -6,7 +6,7 @@
  */
 int sum_listint(listint_t *head)
 {
-int number;
+int number = 0;
 if (head == '\0')
 return (0);
 while (head != '\0')
