@@ -17,13 +17,13 @@ size_t print_listint_safe(const listint_t *head)
     {
       position = next_p;
       next_p = next_p->next;
+      cont++;
       printf("[%p] %d\n", (void *) position, position->n);
       if (position <= next_p)
 	{
 	  printf("-> [%p] %d\n", (void *) next_p, next_p->n);
-	  break;
-	}
-      cont++;
-    }
-  return (cont);
+break;
+}
+}
+return (cont);
 }
