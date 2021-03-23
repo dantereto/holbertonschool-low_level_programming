@@ -18,6 +18,7 @@ if (idx == 0)
 {
 new->next = *head;
 *head = new;
+return (new);
 }
 cont = *head;
 for (number = 0; number < idx - 1; number++)
