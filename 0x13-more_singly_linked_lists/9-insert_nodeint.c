@@ -14,6 +14,13 @@ new = malloc(sizeof(listint_t));
 if (new == '\0')
 return ('\0');
 new->n = n;
+if (idx == 0)
+{
+new->next = *head;
+*head = new;
+return (new);
+}
+
 cont = *head;
 for (number = 0; number < idx - 1; number++)
 {
