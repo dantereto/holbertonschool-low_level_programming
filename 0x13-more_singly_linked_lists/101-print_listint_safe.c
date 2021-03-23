@@ -21,8 +21,8 @@ cont++;
 printf("[%p] %d\n", (void *) position, position->n);
 if (position <= next_p)
 {
-printf("->[%p] %d\n", (void *) next_p, next_p->n);
-exit(98);
+printf("-> [%p] %d\n", (void *) next_p, next_p->n);
+break;
 }
 }
 return (cont);
