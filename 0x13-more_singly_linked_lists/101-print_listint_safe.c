@@ -27,7 +27,7 @@ if (position <= next_p)
 printf("-> [%p] %d\n", (void *) next_p, next_p->n);
 break;
 }
-return ('\0');
+return (0);
 }
 return (cont);
 }
