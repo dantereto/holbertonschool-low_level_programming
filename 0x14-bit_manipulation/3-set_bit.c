@@ -12,7 +12,7 @@ if (index > sizeof(n) * 8)
 return (-1);
 else
 {
-*n = *n | 1 >> index;
+*n = *n | 1 << index;
 return (1);
 }
 }
