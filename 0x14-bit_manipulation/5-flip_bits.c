@@ -7,13 +7,13 @@
  */
 int countBits(int n)
 {
-int count = 0;
+unsigned long int cont = 0;
 while (n > 0)
 {
-count++;
+cont++;
 n &= (n - 1);
 }
-return (count);
+return (cont);
 }
 /**
  * flip_bits - return the difference
