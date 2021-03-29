@@ -12,16 +12,17 @@ char *buff;
 int open_f;
 ssize_t read_f, write_f;
 if (filename == '\0')
-return ('\0');
+return (0);
 open_f = open(filename, O_RDWR);
 if (open_f == '\0')
-return ('\0');
+return (0);
 buff = malloc(sizeof(char) * letters);
 if (buff == '\0')
-return ('\0');
+return (0);
 read_f = read(open_f, buff, letters);
 if (read_f == '\0')
-return ('\0');
+free(buff);
+return (0);
 write_f = write(STDOUT_FILENO, buff, read_f);
 free(buff);
 close(open_f);
