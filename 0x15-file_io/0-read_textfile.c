@@ -24,7 +24,7 @@ if (read_f == -1)
 free(buff);
 return (0);
 write_f = write(STDOUT_FILENO, buff, read_f);
-if (write_f == -1)
+if (write_f == -1 || read_f != write_f)
 return (0);
 free(buff);
 close(open_f);
