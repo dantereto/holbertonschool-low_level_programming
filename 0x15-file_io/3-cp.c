@@ -4,51 +4,63 @@
 #include <fcntl.h>
 #include <stdio.h>
 /**
- * append_text_to_file - append the text of a file
+ * copy_f - append the text of a file
  *@text_content: the cotent of the file
- *@filename: the name of the file
+ *@filename: name file
  *Return: reyturn 0
  */
-int _copy_file(const char *filename, const char *text_content)
+int copy_f(const char *filename, const char *text_content)
 {
-  int open_f, create_f, read_f, write_f;
-  char buff[1024];
-  open_f = open(filename, O_RDONLY);
-    if (open_f == '\0' || filename == '\0')
-      {
-	dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", filename);
-	exit(98);
-      }
-  create_f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0644);
-  read_f = read(open_f, buff, 1024);
-  write_f = write(create_f, buff, read_f);
-  while (read_f > 0)
-    {    
-      if (write_f != read_f || create_f == -1)
-	{
-	  dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", text_content);
-	  exit(99);
-	  }
-    } 
-    if (close(create_f) == -1)
-      {
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", create_f);
-	exit(100);
-      }
-    if (close(open_f) == -1)
-      {
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", open_f);
-	exit(100);  
-      }
-    return (0);
+int open_f, create_f, read_f;
+char buff[1024];
+mode_t mode;
+mode = S_IRUSR  | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+open_f = open(filename, O_RDONLY);
+if (filename == '\0' || open_f == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+exit(98);
 }
-int main(int argc, char **argv)
+create_f = open(text_content, O_CREAT | O_WRONLY | O_TRUNC, mode);
+while ((read_f = read(open_f, buff, 1024)) > 0)
 {
-  if (argc != 3)
-    {
-      dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-      exit(97);
-    }
-  _copy_file(argv[1], argv[2]);
-  return (EXIT_SUCCESS);
+if (write(create_f, buff, read_f) != read_f || create_f == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", text_content);
+exit(99);
+}
+}
+if (read_f == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+exit(98);
+}
+if (close(create_f) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", create_f);
+exit(100);
+}
+if (close(open_f) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", open_f);
+exit(100);
+}
+return (0);
+}
+/**
+ * main - check the code for Holberton School students.
+ *
+ *@av: av
+ *@ac: ac
+ * Return: Always 0.
+ */
+int main(int ac, char **av)
+{
+if (ac != 3)
+{
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+exit(97);
+}
+copy_f(av[1], av[2]);
+return (EXIT_SUCCESS);
 }
