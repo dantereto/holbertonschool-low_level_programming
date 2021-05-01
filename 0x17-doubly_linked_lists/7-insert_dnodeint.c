@@ -15,12 +15,6 @@ new = malloc(sizeof(dlistint_t));
 if (new == '\0')
 return ('\0');
 new->n = n;
-if (idx == 0)
-{
-new->next = *h;
-*h = new;
-return (new);
-}
 for (number = 0; number < idx - 1; number++)
 {
 if (cont == '\0')
