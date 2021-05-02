@@ -17,22 +17,22 @@ if (idx == 0)
 {
 add_dnodeint(h, n);
 }
- for (number = 0; number < idx - 1; number++)
-   {
-     if (cont == '\0')
-       return ('\0');
-     cont = cont->next;
+for (number = 0; number < idx - 1; number++)
+{
+cont = cont->next;
+if (cont == '\0')
+return ('\0');
 }
 if (cont->next == '\0')
-   {
-     add_dnodeint_end(h, n);
-   }
+{
+add_dnodeint_end(h, n);
+}
 new = malloc(sizeof(dlistint_t));
 if (new == '\0')
 return ('\0');
 new->n = n;
-new->next = cont->next;
 new->prev = cont;
+new->next = cont->next;
 cont->next->prev = new;
 cont->next = new;
 return (cont);
