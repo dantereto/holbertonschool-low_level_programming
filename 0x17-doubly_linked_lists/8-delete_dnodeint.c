@@ -19,12 +19,16 @@ if (cont == '\0')
 return (-1);
 cont = cont->next;
 }
-if (cont)
+if (cont == *head)
+{
+*head = cont->next;
+if (*head != '\0')
+(*head)->prev = '\0';
+}
+else
 {
 if (cont->prev)
 cont->prev->next = cont->next;
-else
-*head = cont->next;
 if (cont->next != '\0')
 cont->next->prev = cont->prev;
 free(cont);
