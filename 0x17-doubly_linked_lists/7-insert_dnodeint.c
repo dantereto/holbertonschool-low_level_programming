@@ -21,7 +21,7 @@ new->next = *h;
 *h = new;
 return (new);
 }
-for (number = 0; number < idx - 1; number++)
+for (number = 0; number < idx; number++)
 {
 if (cont == NULL)
 return (NULL);
