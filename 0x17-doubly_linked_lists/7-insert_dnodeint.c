@@ -17,9 +17,7 @@ return ('\0');
 new->n = n;
 if (idx == 0)
 {
-new->next = *h;
-*h = new;
-return (new);
+add_dnodeint (h, n);
 }
 for (number = 0; number < idx - 1; number++)
 {
