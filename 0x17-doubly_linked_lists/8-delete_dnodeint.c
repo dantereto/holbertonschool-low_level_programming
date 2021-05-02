@@ -9,7 +9,6 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *cont;
-unsigned int num = 0;
 if (*head == '\0')
 return (-1);
 cont = *head;
@@ -19,7 +18,7 @@ if (index == 0)
 free(cont);
 return (1);
 }
-for (; num < index; num++)
+for (; index != 0; index--)
 {
 if (cont == '\0')
 return (-1);
