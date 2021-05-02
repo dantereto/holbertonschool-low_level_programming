@@ -8,10 +8,11 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *cont = *head;
+dlistint_t *cont;
 unsigned int num;
 if (*head == '\0')
 return (-1);
+cont = *head;
 for (; num < index; num++)
 {
 if (cont == '\0')
@@ -27,7 +28,8 @@ else
 cont->prev->next = cont->next;
 if (cont->next != '\0')
 cont->next->prev = cont->prev;
-}
 free(cont);
 return (1);
+}
+return (-1);
 }
