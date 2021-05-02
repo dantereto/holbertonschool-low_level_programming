@@ -30,8 +30,7 @@ else
 cont->prev->next = cont->next;
 if (cont->next != '\0')
 cont->next->prev = cont->prev;
+}
 free(cont);
 return (1);
-}
-return (-1);
 }
