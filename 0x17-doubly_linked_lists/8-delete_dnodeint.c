@@ -17,6 +17,7 @@ for (; num < index; num++)
 {
 if (cont == '\0')
 return (-1);
+cont = cont->next;
 }
 if (cont == *head)
 {
