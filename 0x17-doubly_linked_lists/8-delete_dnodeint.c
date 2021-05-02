@@ -17,13 +17,10 @@ for (; num < index; num++)
 {
 if (cont == '\0')
 return (-1);
-cont = cont->next;
 }
 if (cont == *head)
 {
 *head = cont->next;
-if (*head != '\0')
-(*head)->prev = '\0';
 }
 else
 {
