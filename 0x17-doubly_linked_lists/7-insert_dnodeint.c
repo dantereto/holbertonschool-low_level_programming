@@ -14,6 +14,7 @@ unsigned int num = 0;
 new = malloc(sizeof(dlistint_t));
 if (new == '\0')
 return (NULL);
+new->n = n;
 if (idx == 0)
 {
 new->next = *h;
@@ -26,7 +27,6 @@ if (cont == NULL)
 return (NULL);
 cont = cont->next;
 }
-new->n = n;
 new->next = cont->next;
 new->prev = cont;
 cont->next->prev = new;
