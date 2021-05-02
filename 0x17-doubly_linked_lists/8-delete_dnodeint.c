@@ -19,11 +19,7 @@ if (cont == '\0')
 return (-1);
 cont = cont->next;
 }
-if (cont == *head)
-{
-*head = cont->next;
-}
-else
+if (cont)
 {
 if (cont->prev)
 cont->prev->next = cont->next;
