@@ -17,9 +17,9 @@ if (new == NULL)
 new->n = n;
 if (idx == 0)
 {
-return (NULL);
-new->n = n;
-if (idx == 0)
+new->next = *h;
+*h = new;
+return (new);
 }
 for (number = 0; number < idx - 1; number++)
 {
