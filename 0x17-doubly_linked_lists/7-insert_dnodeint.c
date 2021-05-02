@@ -28,9 +28,9 @@ cont = cont->next;
 }
 if (cont->next == '\0')
 return (add_dnodeint_end(h, n));
-new->prev = cont;
 new->next = cont->next;
+new->prev = cont;
 cont->next->prev = new;
 cont->next = new;
-return (cont);
+return (new);
 }
