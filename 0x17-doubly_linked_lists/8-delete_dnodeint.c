@@ -25,7 +25,10 @@ if (cont == *head)
 }
 else
 {
+if (cont->prev)
 cont->prev->next = cont->next;
+else
+*head = cont->next;
 if (cont->next != '\0')
 cont->next->prev = cont->prev;
 free(cont);
