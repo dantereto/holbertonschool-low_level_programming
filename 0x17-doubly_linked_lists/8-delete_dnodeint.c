@@ -27,7 +27,6 @@ if (*head != '\0')
 else
 {
 cont->prev->next = cont->next;
-if (cont->next != '\0')
 cont->next->prev = cont->prev;
 }
 free(cont);
