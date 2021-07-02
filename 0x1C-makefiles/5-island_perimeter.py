@@ -4,6 +4,7 @@
 
 
 def island_perimeter(grid):
+    """start"""
 
     cuadrado = 0
     mitad = 0
