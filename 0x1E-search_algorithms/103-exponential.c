@@ -10,7 +10,7 @@
 int exponential_search(int *array, size_t size, int value)
 {
 size_t i = 1, start, point;
-if (array[0] == value)
+if (array == NULL || size == 0)
 return (-1);
 while (i < size && array[i] <= value)
 {
