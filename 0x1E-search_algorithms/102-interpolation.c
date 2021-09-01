@@ -19,7 +19,7 @@ size_t pos = low + (((double)(high - low) / (
 				     value - array[low]));
 if (pos >= size)
 {
-printf("Value checked array[%lu] is out of range\n", pos);
+printf("alue checked array[%lu] is out of range\n", pos);
 break;
 }
 printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
