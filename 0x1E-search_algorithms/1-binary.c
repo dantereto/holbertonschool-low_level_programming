@@ -19,7 +19,7 @@ for (i = left; i < right; i++)
 {
 printf("%i, ", array[i]);
 }
-printf("%i\n", array[right]);
+printf("%i\n", array[i]);
 middle = (left + right) / 2;
 if (array[middle] > value)
 right = middle - 1;
