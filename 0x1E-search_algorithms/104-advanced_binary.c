@@ -25,8 +25,6 @@ size_t i, middle;
 printf("Searching in array: ");
 if (array != NULL)
 {
-for (i = 0; left <= right;)
-{
 for (i = left; i < right; i++)
 {
 printf("%i, ", array[i]);
@@ -41,7 +39,6 @@ else if (array[middle] >= value)
 return (binari_search(array, left, middle, value));
 else if (array[middle] < value)
 return (binari_search(array, middle + 1, right, value));
-}
 }
 return (-1);
 }
