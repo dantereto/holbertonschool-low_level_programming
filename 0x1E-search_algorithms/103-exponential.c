@@ -38,7 +38,7 @@ if (array != NULL)
 {
 for (i = 0; left <= right;)
 {
-printf("Searching in array:");
+printf("Searching in array: ");
 for (i = left; i < right; i++)
 {
 printf("%i, ", array[i]);
