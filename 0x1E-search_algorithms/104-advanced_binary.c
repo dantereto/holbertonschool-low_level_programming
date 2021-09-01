@@ -8,6 +8,8 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
+if (array == NULL || size == 0)
+return (-1);
 return (binari_search(array, 0, size - 1, value));
 }
 /**
