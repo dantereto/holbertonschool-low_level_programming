@@ -22,7 +22,7 @@ return (binari_search(array, 0, size - 1, value));
 int binari_search(int *array, size_t left, size_t right, int value)
 {
 size_t i, middle;
-printf("Searching in array:");
+printf("Searching in array: ");
 if (array != NULL)
 {
 for (i = 0; left <= right;)
