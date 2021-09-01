@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * advanced_binary - search for a number in a binary way
+ * advanced_binary - earch for a number in a binary way
  * @array: the input
  * @size: the size of the input
  * @value: the value to seaach
