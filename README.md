@@ -7,6 +7,7 @@
 Table of Contents
 * [About](#About)
 * [Requirements](#Requirements)
+* [Projects](#Projects)
 
 <h2 name="About"> About </h2>
 in this directory we will see this:
@@ -25,3 +26,5 @@ in this directory we will see this:
 <h2 name="Requirements"> Requirements </h2>
 
 * Ubuntu 20.04 LTS
+
+<h2 name="Projects"> Projects </h2>
