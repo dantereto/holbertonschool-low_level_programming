@@ -6,7 +6,7 @@
 
 [About](#About)
 
-<h2> About </h2>
+<h2 name="About"> About </h2>
 in this directory we will see this:
 
 * How use c
