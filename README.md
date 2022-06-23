@@ -4,6 +4,8 @@
 
 ![image (5)](https://user-images.githubusercontent.com/70924466/175170636-12d6ed6e-f57d-4db2-9c51-a5b9a7245aa5.png)
 
+[My First Title](#markdown-header-my-first-title)
+
 <h2> About </h2>
 in this directory we will see this:
 
@@ -13,4 +15,7 @@ in this directory we will see this:
 * Debugging
 * Linked list
 * Variables, types, operators, expressions, loops, nested loops
-* 
+* Recursion
+* Makefiles
+* Shell
+* Static and dinamics
