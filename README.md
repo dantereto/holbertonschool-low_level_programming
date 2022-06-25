@@ -29,33 +29,33 @@ in this directory we will see this:
 
 <h2 name="Projects"> Projects </h2>
 
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x00-hello_world">0x00-hello_world</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while">0x01-variables_if_else_while</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops">0x02-functions_nested_loops</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x03-debugging">0x03-more_functions_nested_loops</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops">0x04-pointers_arrays_strings</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings">0x05-pointers_arrays_strings</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings">0x06-pointers_arrays_strings</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings">0x07-recursion</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x08-recursion">0x08-static_libraries</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x09-static_libraries">0x09-argc_argv</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free">0x0A-malloc_free</a>
-<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free">0x0B-more_malloc_free</a>
-0x0C-preprocessor
-0x0D-structures_typedef
-0x0E-function_pointers
-0x0F-variadic_functions
-0x10-printf ** printf project **
-0x11-singly_linked_lists
-0x12-more_singly_linked_lists
-0x13-bit_manipulation
-0x14-file_io
-0x15-simple_shell ** C Shell project **
-0x16-doubly_linked_lists
-0x17-dynamic_libraries
-0x18-stacks_queues_lifo_fifo ** Monty ByteCode Interpreter **
-0x19-hash_tables
-0x1A-sorting_algorithms ** Sorting algorithms project **
-0x1B-makefiles
-0x1C-binary_trees
-0x1D-search_algorithms ** Search algorithms project **
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x00-hello_world">0x00-hello_world</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while">0x01-variables_if_else_while</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops">0x02-functions_nested_loops</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x03-debugging">0x03-debugging</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops">0x04-more_functions_nested_loops</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings">0x05-pointers_arrays_strings</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings">0x06-pointers_arrays_strings</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings">0x07-pointers_arrays_strings</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x08-recursion">0x08-recursion</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x09-static_libraries">0x09-static_libraries</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv">0x0A-argc_argv</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free">0x0B-more_malloc_free</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free">0x0C-more_malloc_free</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor">0x0D-preprocessor</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0E-structures_typedef">0x0E-structures_typedef</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers">0x0F-function_pointers</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions">0x10-variadic_functions</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists">0x12-singly_linked_lists</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists">0x13-more_singly_linked_lists</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation">0x14-bit_manipulation</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x15-file_io">0x15-file_io</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists">0x17-doubly_linked_lists</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries">0x18-dynamic_libraries</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables">0x1A-hash_tables</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1C-makefiles">0x1C-makefiles</a>
+*<a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1E-search_algorithms">0x1E-search_algorithms</a>
+*<a href="https://github.com/ForeroAlexander/printf">printf</a>
+*<a href="https://github.com/dantereto/simple_shell">simple_shell</a>
+*<a href="https://github.com/dantereto/monty">monty</a>
+*<a href="https://github.com/dantereto/sorting_algorithms">sorting_algorithms</a>
