@@ -58,4 +58,4 @@ in this directory we will see this:
 *< a href="https://github.com/ForeroAlexander/printf">printf</a>
 *< a href="https://github.com/dantereto/simple_shell">simple_shell</a>
 *< a href="https://github.com/dantereto/monty">monty</a>
-*< a href="https://github.com/dantereto/sorting_algorithms">sorting_algorithms</a>
+* <a href="https://github.com/dantereto/sorting_algorithms">sorting_algorithms</a>
