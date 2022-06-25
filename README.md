@@ -55,7 +55,7 @@ in this directory we will see this:
 * <a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables">0x1A-hash_tables</a>
 * <a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1C-makefiles">0x1C-makefiles</a>
 * <a href="https://github.com/dantereto/holbertonschool-low_level_programming/tree/main/0x1E-search_algorithms">0x1E-search_algorithms</a>
-*< a href="https://github.com/ForeroAlexander/printf">printf</a>
-*< a href="https://github.com/dantereto/simple_shell">simple_shell</a>
-*< a href="https://github.com/dantereto/monty">monty</a>
+* <a href="https://github.com/ForeroAlexander/printf">printf</a>
+* <a href="https://github.com/dantereto/simple_shell">simple_shell</a>
+* <a href="https://github.com/dantereto/monty">monty</a>
 * <a href="https://github.com/dantereto/sorting_algorithms">sorting_algorithms</a>
