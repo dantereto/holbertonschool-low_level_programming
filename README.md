@@ -8,6 +8,7 @@ Table of Contents
 * [About](#About)
 * [Requirements](#Requirements)
 * [Projects](#Projects)
+* [Credits](#Credits)
 
 <h2 name="About"> About </h2>
 in this directory we will see this:
@@ -59,3 +60,10 @@ in this directory we will see this:
 * <a href="https://github.com/dantereto/simple_shell">simple_shell</a>
 * <a href="https://github.com/dantereto/monty">monty</a>
 * <a href="https://github.com/dantereto/sorting_algorithms">sorting_algorithms</a>
+
+<h2 name="Credits"> Credits </h2>
+<p>This project was made by Daniel EscobaR</p>
+
+* <a href="https://twitter.com/Danielf05128222">Twitter</a>
+* <a href="https://www.linkedin.com/in/daniel-felipe-escobar-chavez-7823881b6/">Linkedin</a>
+* <a href="https://github.com/capolaniaq/Turitrav">Porfolio Projec</a>
